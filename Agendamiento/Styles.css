@@ -1,0 +1,131 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Color de fondo general */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100px 0; /* Ancho máximo del contenido */
+    
+}
+
+.header {
+    background-color: #fff; /* Color de fondo de la cabecera */
+    color: #1B4F72; /* Color de texto */
+    padding: 1 px 0;
+    border-bottom: 0px solid #ccc; /* Línea inferior de separación */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin: 0 auto;
+    max-width: 1000px 0;
+    
+   
+   
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 60%;
+    padding: 1px 0;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    font-size: 0.9em; /* Tamaño del texto del input de búsqueda */
+    margin-right: 10px 0; /* Espacio entre el buscador y el logo */
+}
+
+.logo-image {
+    max-width: 300px; /* Ajustar el tamaño del logo */
+    
+     display: flex;
+     width: 30%;
+    padding: 1px 0;
+}
+
+.navigation {
+    background-color: #1B4F72; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color de texto */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff; /* Color de texto de los enlaces */
+    font-weight: bold;
+}
+
+.navigation ul li a:hover {
+    color: #0056b3; /* Color de texto al pasar el ratón sobre los enlaces */
+}
+
+.main-content {
+    padding: 20px 0;
+    text-align: center; /* Centrar el contenido */
+}
+
+.main-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Alinear el formulario horizontalmente */
+}
+
+.form-input {
+    width: calc(100% - 22px); /* Ajustar el ancho de los inputs */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #1B4F72; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-container button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 10px 0;
+}
