@@ -1,0 +1,64 @@
+.ts{
+    color: rgb(56, 182, 255);
+    margin-top: 2%;
+}
+.iniciio{
+    margin-top: 5%;
+    border: solid rgb(56, 182, 255);
+    border-radius: 10px;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.mb-3{
+    margin-top: 2%;
+}
+#exampleInputEmail1{
+    background-color:rgb(225, 224, 222);
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+#exampleInputPassword1{
+    background-color:rgb(225, 224, 222);
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.form-check{
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 40%;
+}
+.linl{
+    text-decoration: none;
+    color: rgb(56, 182, 255);
+}
+.btn-primary{
+    margin-top: 2%;
+    background-color:rgb(56, 182, 255) ;
+}
+.co{
+    margin-top: 10em;
+    background-color:rgb(56, 182, 255);
+}
+footer{
+    margin-top: auto;
+}
+.tratamiento{
+    text-align: center;
+    margin-left: 0px;
+    color: white;
+    margin: 0;
+    bottom: 0;
+}
+.text_tratamiento{
+    text-align: justify;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.bot{
+    margin-top: 3%;
+}

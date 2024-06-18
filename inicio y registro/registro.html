@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registros</title>
+    <link rel="stylesheet" href="style/Styles_registro.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header-container">
+            <h2>Formulario de Registro</h2>
+        </div>
+         <div class="form-group">
+       
+        </div>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_documento">Tipo de Documento</label>
+                <select id="tipo_documento" name="tipo_documento" required>
+                   <option value="cedula">Cédula</option>
+                    <option value="tarjeta">Tarjeta de identidad</option>
+                    <option value="pasaporte">Pasaporte</option>  
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero_documento">Número de Documento</label>
+                <input type="text" id="numero_documento" name="numero_documento" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="repetir_contrasena">Repetir Contraseña</label>
+                <input type="password" id="repetir_contrasena" name="repetir_contrasena" required>
+            </div>
+            <div class="form-group">
+                <button type="submit"><a href="../index.html">Registrar</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
