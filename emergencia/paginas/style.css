@@ -1,0 +1,70 @@
+.form-inline{
+    display: flex;
+}
+.hs{
+    color: rgb(56, 182, 255);
+}
+.col-3{
+    color: white;
+    background-color:rgb(56, 182, 255) ;
+}
+.t{
+    margin-top: 5%;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+.formulario{
+    margin-top: 3%;
+    border: solid 2px red;
+    border-radius: 15px;
+}
+.lugar{
+    text-align: center;
+    margin-left: 0px;
+    color: black;
+    margin: 0;
+}
+.hospital{
+    text-align: center;
+    margin-left: 0px;
+    color: black;
+    margin: 0;
+}
+.hora{
+    text-align: center;
+    margin-left: 0px;
+    color: black;
+    margin: 0;
+}
+.btn-primary{
+    margin-top: 1%;
+    border-radius: 5px;
+}
+#boton{
+    margin-right: 20%;
+    margin-left: 35%;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+.co{
+    margin-top: 10em;
+    background-color:rgb(56, 182, 255);
+}
+footer{
+    margin-top: auto;
+}
+.tratamiento{
+    text-align: center;
+    margin-left: 0px;
+    color: white;
+    margin: 0;
+    bottom: 0;
+}
+.text_tratamiento{
+    text-align: justify;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}

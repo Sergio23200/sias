@@ -1,0 +1,75 @@
+.form-inline{
+    display: flex;
+}
+.hs{
+    color: rgb(56, 182, 255);
+}
+.col-3{
+    color: white;
+    background-color:rgb(56, 182, 255) ;
+}
+.t{
+    margin-top: 5%;
+    color: rgb(56, 182, 255);
+}
+.formulario{
+    margin-top: 3%;
+    border: solid 2px rgb(56, 182, 255);
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 20% ;
+    margin-right: 20%;
+}
+.btn-primary{
+    margin-top: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+#boton{
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    color: white;
+    background-color: rgb(56, 182, 255);
+    border-color: rgb(56, 182, 255);
+}
+.co{
+    margin-top: 10em;
+    background-color:rgb(56, 182, 255);
+}
+footer{
+    margin-top: auto;
+}
+.tratamiento{
+    text-align: center;
+    margin-left: 0px;
+    color: white;
+    margin: 0;
+    bottom: 0;
+}
+.text_tratamiento{
+    text-align: justify;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+select{
+    height: 100%;
+}
+.bar{
+    background-color: rgb(225, 224, 222);
+    margin-top: 3%;
+    height: 30%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 2em;
+}
+.bar select{
+    height: 60%;
+    width: 100%;
+    background-color: rgb(225, 224, 222);
+    border-radius: 2em;
+}

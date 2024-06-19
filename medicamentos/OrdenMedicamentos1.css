@@ -1,0 +1,78 @@
+header { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:3%;
+}
+
+.logo_buscar { 
+  width:20%;
+  height:20%;}
+
+.logo_sura { 
+  width:20%;
+  height:20%;}
+
+  
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+li:focus,
+li:hover,
+li:active {
+  background-color: powderblue;
+  padding: 0.5%;
+  text-decoration: none;
+  transition: all 0.5s;
+  margin-left: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(151, 180, 243);
+  width: 100%;
+  padding: 1%;
+  
+}
+
+li {
+    font-weight: 700;
+    font-size: 120%;
+  list-style: none;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+h1{
+  width: 100%;
+  color:blue;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.formulario{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding:2%;
+}
+
+.orden{
+  margin-top: 2%;
+  padding: 10%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.Email{
+  margin-top: 2%;
+  padding: 10%;
+  text-align: center;
+
+}

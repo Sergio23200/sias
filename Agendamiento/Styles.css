@@ -118,6 +118,10 @@ body {
     cursor: pointer;
     font-size: 1em;
 }
+.sas{
+    text-decoration: none;
+    color: white;
+}
 
 .form-container button:hover {
     background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
