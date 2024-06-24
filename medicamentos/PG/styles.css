@@ -12,12 +12,12 @@
 .t{
     margin-top: 5%;
     color: white;
-    background-color: red;
+    background-color: rgb(56, 182, 255);
     border-radius: 5px;
 }
 .formulario{
     margin-top: 3%;
-    border: solid 2px red;
+    border: solid 2px rgb(56, 182, 255);
     border-radius: 15px;
 }
 .lugar{
@@ -46,8 +46,8 @@
     margin-right: 20%;
     margin-left: 35%;
     color: white;
-    background-color: red;
-    border-color: red;
+    background-color: rgb(56, 182, 255);
+    border-color: rgb(56, 182, 255);
 }
 .co{
     margin-top: 10em;

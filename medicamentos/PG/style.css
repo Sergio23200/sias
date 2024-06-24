@@ -1,0 +1,65 @@
+.form-inline{
+    display: flex;
+}
+.hs{
+    color: rgb(56, 182, 255);
+    text-decoration: none;
+}
+.col-3{
+    color: white;
+    background-color:rgb(56, 182, 255) ;
+}
+.t{
+    margin-top: 5%;
+    color: rgb(56, 182, 255);
+}
+.medicamento{
+    margin-top: 3%;
+    border: solid rgb(56, 182, 255) ;
+    background-color:rgb(225, 224, 222);
+}
+.img_medicamento{
+    padding: 2em;
+    border-radius: 3em;
+    border: solid color blue    ;
+}
+.info_medi{
+    background-color: white;
+    border-radius: 1em;
+}
+
+.co{
+    margin-top: 10em;
+    background-color:rgb(56, 182, 255);
+}
+footer{
+    margin-top: auto;
+}
+.tratamiento{
+    text-align: center;
+    margin-left: 0px;
+    color: white;
+    margin: 0;
+    bottom: 0;
+}
+.text_tratamiento{
+    text-align: justify;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+#primar{
+    text-decoration: none;
+    color: white;
+}
+.contin{
+    margin-top: 2%;
+}
+.button-contin{
+    background-color: rgb(56, 182, 255);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 2em;
+}

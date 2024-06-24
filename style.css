@@ -3,6 +3,7 @@
 }
 .hs{
     color: rgb(56, 182, 255);
+    text-decoration: none;
 }
 .servic{
     margin-top: 3%;
@@ -91,4 +92,7 @@ footer{
 }
 #carouselExampleControls{
     border: rgb(56, 182, 255) solid;
+}
+#carouselExampleIndicators{
+    margin-top: 3%;
 }
