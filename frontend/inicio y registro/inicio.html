@@ -1,53 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='style/style_inicio.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 ts"><p class="h1">SIAS</p></div>
-        <div class="col-6 text-end"><img  class="text-end" src="{{ url_for('static', path='/img/logo.jpg') }}" alt=""></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='style/style_inicio.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 ts"><p class="h1">SIAS</p></div>
+      <div class="col-6 text-end"><img class="text-end" src="{{ url_for('static', path='img/logo.jpg') }}" alt=""></div>
     </div>
-    <div class="container ts">
-      <div class="row">
-        <div class="col text-center ts"><p class="h5">INICIO DE SESION</p></div>
-      </div>
+  </div>
+  <div class="container ts">
+    <div class="row">
+      <div class="col text-center ts"><p class="h5">INICIO DE SESION</p></div>
     </div>
-    <form class="iniciio">
-      <div class="mb-3">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="usuario o email">
-      </div>
-      <div class="mb-3">
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <form class="inicio" action="/sesion_r/" method="post">
+    <div class="mb-3">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="usuario o email" name="user" required>
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña" name="password" required>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="row">
+      <div class="col-md-6 text-center"><a class="link" href="#">¿olvidaste tu usuario?</a></div>
+      <div class="col-md-6 text-center"><a class="link" href="#">¿olvidaste tu contraseña?</a></div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <input type="submit" class="btn btn-primary" value="Enviar">
       </div>
       <div class="row">
-        <div class="col-md-6 text-center"><a class="linl" href="">olvidaste tu usuario</a></div>
-        <div class="col-md-6 text-center"><a class="linl" href="">olvidaste tu contraseña</a></div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <button type="submit" class="btn btn-primary"><a href="http://127.0.0.1:8000/index/" class="btn btn-primary">INICIAR SESION</a></button>
-        </div>
-        <div class="row">
-            <div class="col text-center"><p class="bot">¿no tienes usuario?<span><a href="http://127.0.0.1:8000/registro/">registrate</a></span></p></div>
-        </div>
-      </div>  
-    </form>
-    <footer class="co">
-      <h5 class="tratamiento">TRATAMIENTO DE DATOS</h5>
-      <P class="text_tratamiento">Nos comprometemos a garantizar que su información esté segura en todo momento. Para evitar el acceso no autorizado o la divulgación de sus datos, hemos implementado rigurosas medidas físicas, electrónicas y administrativas. Esto incluye el uso de avanzadas tecnologías de seguridad, controles de acceso. estrictos y políticas de privacidad robustas Nuestro equipo altamente capacitado está dedicado a proteger y asegurar la confidencialidad, integridad y disponibilidad de su información Además, regularmente revisamos y mejoramos nuestros procedimientos de seguridad para adaptarnos a los cambios en las amenazas cibernéticas y mantenernos un paso. adelante en la protección de nuestrs usuarios</P>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        <div class="col text-center"><p class="bot">¿no tienes usuario?<span><a href="http://127.0.0.1:8000/registro/">registrate</a></span></p></div>
+    </div>
+    </div>
+  </form>
+  <footer class="co">
+    <h5 class="tratamiento">TRATAMIENTO DE DATOS</h5>
+    <p class="text_tratamiento">Nos comprometemos a garantizar que su información esté segura en todo momento. Para evitar el acceso no autorizado o la divulgación de sus datos, hemos implementado rigurosas medidas físicas, electrónicas y administrativas. Esto incluye el uso de avanzadas tecnologías de seguridad, controles de acceso estrictos y políticas de privacidad robustas. Nuestro equipo altamente capacitado está dedicado a proteger y asegurar la confidencialidad, integridad y disponibilidad de su información. Además, regularmente revisamos y mejoramos nuestros procedimientos de seguridad para adaptarnos a los cambios en las amenazas cibernéticas y mantenernos un paso adelante en la protección de nuestros usuarios.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>

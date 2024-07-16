@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
-from db_cc import conexion
+from db_cc import conexion, sentencias
 db = conexion.db_conect()
 app = FastAPI()
 templates = Jinja2Templates(directory="../frontend")
@@ -9,6 +9,19 @@ templates = Jinja2Templates(directory="../frontend")
 async def inicio (request: Request):
     app.mount("/static", StaticFiles(directory="../frontend/inicio y registro"), name="static")
     return templates.TemplateResponse("/inicio y registro/inicio.html",{"request":request})
+@app.post("/sesion_r/")
+async def consulta_usuario(request: Request, user: str = Form(...), password: str = Form(...)):
+    resultados_password = sentencias.buscar_password(password)
+    resultados_user = sentencias.buscar_usuario(user)
+    
+    if not resultados_user and not resultados_password:  # Verificar si el usuario o la contraseña son incorrectos
+        app.mount("/static", StaticFiles(directory="../frontend/inicio y registro"), name="static")
+        return templates.TemplateResponse("/inicio y registro/inicio.html", {"request": request})
+    else:
+        return templates.TemplateResponse("index.html", {"request": request})
+    
+    
+
 
 @app.get("/index/")
 async def inicial(request: Request):
@@ -28,4 +41,3 @@ async def submit_form(request: Request, nombre: str = Form(...), correo: str = F
 async def registro(request: Request):
     app.mount("/static", StaticFiles(directory="../frontend/inicio y registro"), name="static")
     return templates.TemplateResponse("/inicio y registro/registro.html",{"request":request})
-    
