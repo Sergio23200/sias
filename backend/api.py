@@ -18,25 +18,23 @@ async def consulta_usuario(request: Request, user: str = Form(...), password: st
         app.mount("/static", StaticFiles(directory="../frontend/inicio y registro"), name="static")
         return templates.TemplateResponse("/inicio y registro/inicio.html", {"request": request})
     else:
-        return templates.TemplateResponse("index.html", {"request": request})
-    
-    
-
-
+        app.mount("/static", StaticFiles(directory="../frontend"), name="static")
+        return  templates.TemplateResponse("index.html",{"request":request})
 @app.get("/index/")
 async def inicial(request: Request):
     app.mount("/static", StaticFiles(directory="../frontend"), name="static")
     return  templates.TemplateResponse("index.html",{"request":request}) 
 @app.post("/submit/")
-async def submit_form(request: Request, nombre: str = Form(...), correo: str = Form(...),
-                    numero_documento: str = Form(...), contraseña: str = Form(...) ):
-        cursor = db.cursor()
-        sql = "INSERT INTO usuarios (username, email,cedula,password) VALUES (%s, %s,%s, %s)"
-        val = (nombre, correo,numero_documento,contraseña)
+async def submit_form(request: Request, nombre: str = Form(...),tipo_documento: str= Form(...),
+                        numero_documento: int = Form(...),email: str = Form(...),ciudad: str = Form(...),
+                        celular: int = Form(...), password: str = Form(...) ): #extracion de datos del formulario de registrp
+        cursor = db.cursor() #llamado a la conexion a la base de datos
+        sql = "INSERT INTO usuarios (username, email, telefono, password, ciudad, cedula, tipo_documento) VALUES (%s, %s, %s, %s, %s,%s,%s)"
+        val = (nombre, email, celular, password, ciudad, numero_documento, tipo_documento)
         cursor.execute(sql, val)
         db.commit()
         cursor.close() 
-        return templates.TemplateResponse("index.html", {"request": request, "nombre": nombre})
+        return templates.TemplateResponse("index.html", {"request": request})
 @app.get("/registro/")
 async def registro(request: Request):
     app.mount("/static", StaticFiles(directory="../frontend/inicio y registro"), name="static")
