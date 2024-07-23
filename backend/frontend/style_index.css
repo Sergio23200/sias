@@ -1,0 +1,41 @@
+
+body{
+    height: 100%;
+    
+}
+#ims{
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 70%;
+
+}
+
+.dropdown_menu_options{
+    padding: 5%;
+    cursor: pointer;
+}
+
+.dropdown_menu_options:hover{
+    background: rgb(161, 219, 248);
+    border-left: 6px solid rgb(177, 204, 208);
+    transition: all 0.4s ease-out;
+
+}
+
+.link{
+    text-decoration: none;
+    color: blue;
+    border: none;
+}
+.form-inline{
+    display: flex;
+}
+.line{
+    height: 10%;
+    background-color: rgb(56, 182, 255);
+
+}
+.asl{
+    text-decoration: none;
+}
